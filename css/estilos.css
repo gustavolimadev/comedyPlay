@@ -1,0 +1,84 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --orange: #ff7b00;
+  --roboto: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--roboto);
+  background-color: #1a1a1a;
+}
+
+header {
+  background-color: var(--black);
+  padding: 1rem;
+}
+
+.logo {
+  color: var(--white);
+  font-family: "impact";
+  font-size: 1.5rem;
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo span {
+  color: var(--orange);
+}
+
+.pesquisar__input {
+  border-radius: 15px;
+  padding: 0.3rem 1rem;
+}
+
+.cabecalho__pesquisar {
+  display: flex;
+  align-items: center;
+}
+
+.pesquisar__botao {
+  background-image: url(../img/cabecalho/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cabecalho__videos {
+  background-image: url(../img/cabecalho/video_call.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px;
+}
+
+footer {
+  color: white;
+  font-family: var(--roboto);
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p a {
+  color: var(--orange);
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1rem;
+  }
+
+  .cabecalho__pesquisar input {
+    width: 120px;
+  }
+
+  .videos__container {
+    padding: 0;
+  }
+}
